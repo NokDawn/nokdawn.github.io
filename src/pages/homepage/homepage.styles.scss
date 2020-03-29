@@ -1,0 +1,162 @@
+.homepage {
+	&__main {
+		position: absolute;
+		width: 100%;
+		text-align: center;
+		top: 52%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-transform: uppercase;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		cursor: default;
+
+		& h1 {
+			& span {
+				display: block;
+				font-size: 4rem;
+				font-weight: 700;
+				animation: moveInLeft 1s;
+				margin: 0;
+				padding-right: 1rem;
+			}
+		}
+
+		& h2 {
+			font-size: 2rem;
+			color: #385f26;
+			margin: 0 4rem 1rem 4rem;
+		}
+
+		& span {
+			font-size: 1.4rem;
+			margin: 0 4rem 3rem 4rem;
+		}
+
+		& button {
+			padding: 1rem 2.5rem;
+			outline: none;
+			border: 7px solid #385f26;
+			background-color: white;
+			color: black;
+			text-transform: uppercase;
+			font-size: 2.2rem;
+			font-family: 'Staatliches', sans-serif;
+			cursor: pointer;
+			transition: all .2s;
+
+			&:hover {
+				color: white;
+				background-color: black;
+			}
+		}
+	}
+}
+
+@keyframes moveInLeft {
+	0% {
+		transform: translateY(-10rem);
+	}
+
+	85% {
+		transform: translateY(1.5rem);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@media (orientation: portrait) and (min-height: 600px) {
+	.homepage {
+		&__main {
+			top: 45%;
+		}
+	}
+}
+
+@media (orientation: portrait) and (min-height: 700px) {
+	.homepage {
+		&__main {
+			top: 40%;
+		}
+	}
+}
+
+@media (orientation: portrait) and (min-height: 800px) {
+	.homepage {
+		&__main {
+			top: 35%;
+		}
+	}
+}
+
+@media (orientation: portrait) and (min-height: 1000px) {
+	.homepage {
+		&__main {
+			top: 30%;
+		}
+	}
+}
+
+@media (min-width: 700px) {
+	.homepage {
+		&__main {
+			& h1 {
+				& span {
+					font-size: 5rem;
+				}
+			}
+
+			& h2 {
+				font-size: 2.5rem;
+			}
+
+			& span {
+				font-size: 1.8rem;
+			}
+		}
+	}
+}
+
+@media (min-width: 1000px) {
+	.homepage {
+		&__main {
+			& h1 {
+				& span {
+					display: inline-block;
+					font-size: 7rem;
+				}
+			}
+
+			& h2 {
+				font-size: 3.5rem;
+			}
+
+			& span {
+				font-size: 2.6rem;
+			}
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.homepage {
+		&__main {
+			& h1 {
+				& span {
+					font-size: 9rem;
+				}
+			}
+
+			& h2 {
+				font-size: 4.5rem;
+			}
+
+			& span {
+				font-size: 3.4rem;
+			}
+		}
+	}
+}
